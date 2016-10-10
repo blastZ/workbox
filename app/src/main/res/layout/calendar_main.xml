@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/dayText_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#ff7f00"/>
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:showWeekNumber="false"
+        android:firstDayOfWeek="2"
+        android:shownWeekCount="5"
+        android:focusedMonthDateColor="#ff7f00"
+        android:selectedWeekBackgroundColor="#ffffff"
+        android:weekSeparatorLineColor="#ffffff"
+        android:unfocusedMonthDateColor="#bfb7b7"
+        android:layout_weight="4">
+    </CalendarView>
+    <TextView
+        android:id="@+id/chooseDay_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#6cdad7"/>
+</LinearLayout>
